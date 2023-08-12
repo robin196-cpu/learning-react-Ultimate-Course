@@ -25,7 +25,7 @@ function Avatar() {
 function Intro() {
   return (
     <>
-      <h1>DinIslam Hassan Robin</h1>
+      <h1 className="header1">DinIslam Hassan Robin</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
