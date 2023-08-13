@@ -6,6 +6,7 @@ function App() {
     <>
       {/* <Profile /> */}
       <TravelList />
+      <h1>Hello</h1>
     </>
   );
 }
