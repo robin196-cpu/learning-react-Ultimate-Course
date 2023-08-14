@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       {/* <Profile /> */}
-      {/* <TravelList /> */}
-      <FlashCard />
+      <TravelList />
+      {/* <FlashCard /> */}
     </>
   );
 }
