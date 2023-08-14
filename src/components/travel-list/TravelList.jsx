@@ -9,11 +9,13 @@ const initialItems = [
 
 export default function TravelList() {
   return (
-    <div className="app">
-      <Logo />
-      <Form />
-      <PackingList />
-      <Stats />
+    <div className="travelList">
+      <div className="app">
+        <Logo />
+        <Form />
+        <PackingList />
+        <Stats />
+      </div>
     </div>
   );
 }
