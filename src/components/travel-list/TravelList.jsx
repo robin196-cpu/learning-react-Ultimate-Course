@@ -22,6 +22,9 @@ export default function TravelList() {
       )
     );
   };
+  const handlerClearItems = () => {
+    setItems([]);
+  };
   return (
     <div className="travelList">
       <div className="app">
@@ -31,6 +34,7 @@ export default function TravelList() {
           items={items}
           toggoleItem={handleToggleItem}
           onDelete={handleDelete}
+          clearList={handlerClearItems}
         />
         <Stats items={items} />
       </div>
@@ -75,7 +79,7 @@ function Form({ addItem }) {
     </form>
   );
 }
-function PackingList({ items, onDelete, toggoleItem }) {
+function PackingList({ items, onDelete, toggoleItem, clearList }) {
   const [sortBy, setSortBy] = useState("packed");
   let sortedItems;
   if (sortBy === "input") sortedItems = items;
@@ -105,6 +109,7 @@ function PackingList({ items, onDelete, toggoleItem }) {
           <option value="description">Short by description</option>
           <option value="packed">Short by packed</option>
         </select>
+        <button onClick={clearList}>Clear</button>
       </div>
     </div>
   );
